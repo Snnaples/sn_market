@@ -46,8 +46,7 @@ function sellItemsMenu(player,choice) {
     let user_id = sn.getUserId(player);
     let itemsList =  {name:"Inventarul tau",css : {top:"75px",header_color:"rgba(0,125,255,0.75)"}};
     let value = vRP.getUserDataTable(user_id)[0];
-    
-         console.log(JSON.stringify(value));
+  
         for (let inventoryItem in value.inventory) {
             let itemName = vRP.getItemName(inventoryItem)[0];
            
